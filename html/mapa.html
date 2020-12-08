@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">         
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Projeto Mapa</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script  type="text/javascript"src="https://maps.googleapis.com/maps/api/js?key=suaAPI&libraries=places&language=pt&callback=initMap" async defer> </script>
+    </head>
+
+    <body class="container-fluid d-flex p-2 bd-highlightc flex-column justify-content-center align-items-center" id="body">
+
+        <header class="container">
+            <h1 class="h2 text-center">Procure a Empresa</h1>
+        </header>
+
+    <main class="container d-flex p-2 bd-highlightc flex-column justify-content-center align-items-center">
+
+        <form class="d-inline-flex p-2 bd-highlight flex-column justify-content-center" id="form" >
+            <div class="form-group">
+                <label for="origins" class="h5 flex-column justify-content-center align-items-center text-center">
+                    Digite seu endereço:
+                    <input type="text" value=""class="form-control mt-3" id="origins" placeholder="Digite um CEP ou endereço" autofocus>
+                </label>        
+                
+            </div>
+            
+            <div class="btn-group flex-row justify-content-center align-items-center m-1 form-group-lg" role="group">
+                <input type="submit" value="Pesquisar" class="btn btn-primary form-control" id="research">
+                
+                <button class="btn btn-success form-control " id="clean">Limpar</button>    
+            </div>       
+        </form>
+
+        <div class="flex-column align-items-start">
+            <h2 id="distance"> </h2>
+            <h2 id="time" class=""></h2>
+            <h2 id="taxes" class=""></h2>
+        </div>
+
+        <div class=""id="maps"></div>
+
+    </main>
+    <div class="m-2">
+        <h1 class="text-center badge badge-pill badge-info p-2">
+            <a target="_blank"href="https://api.whatsapp.com/send?phone=seunumero-" class="h6 text-center" id="whatsapp">
+                <img src="../images/whatsapp.png"> Contate-nos
+            </a>
+        </h1>
+    </div>
+    </body>
+     
+    <script src="../js/initMap.js"></script>
+   
+   
+
+    
+</html>
+

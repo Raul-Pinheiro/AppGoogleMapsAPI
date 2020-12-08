@@ -1,0 +1,28 @@
+#body{
+    background:rgb(145, 207, 176);
+}
+/*3*/
+#maps{
+    width:340px;
+    height:400px;    
+    margin:2px solid transparent;
+    border-radius:8px;  
+}
+
+#distance,#time,#taxes{
+    font-family:arial;
+    font-weight: lighter;
+    font-size: 15px;
+    color:green;
+    text-align: center;
+}
+
+#whatsapp{
+    color:white;
+}
+
+#origins{
+    width:320px;
+}
+
+
